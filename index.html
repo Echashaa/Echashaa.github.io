@@ -1,22 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-       <div class="container">
-        <div class="box">
-           <marquee behavior="scroll" direction="right" scrollamount="10"> <h1>Biodata</h1></marquee>
-            <hr>
-    <ul>
-      <li><strong>Nama:</strong> Raden Ayesa</li>
-      <li><strong>TTL:</strong> BOGOR</li>
-      <li><strong>Email:</strong> email@example.com</li>
-      <li><strong>Hobi:</strong> Membaca</li>
-      <li><strong>Pilihan Setelah SMK:</strong></li>
-      <a href=biodata2.html>Bekerja</a>
-    </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KPP (DJP)</title>
+</head>
+<body>
+    <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="overlay">
+        <div class="overlay-text">
+            <a href="m2k.html">Beranda</a>
         </div>
-       </div>
-    </body>
+    </div>
+    <div class="container">
+        <img src="foto/logo-branding-djp-kemenkeu-2021-01-20220427115814.png" width="250px" height="100px">
+        <header>
+            <div class="header-info">
+                <div class="contact-info">
+                    <strong>Alamat</strong> <p></i> Jln. Bogor</p>
+                    <br>
+                    <p><strong>Telepon:</strong></i> (+62) 1234 5678</p>
+                    <p><strong>Twitter:</strong>...</p>
+                    <p><strong>Instagram:</strong>...</p>
+                </div>
+            </div>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Pencarian...">
+            <button type="submit" href="m2k.html">Cari</button>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const overlay = document.querySelector('.overlay');
+
+        menuToggle.addEventListener('click', function () {
+            this.classList.toggle('open');
+            overlay.classList.toggle('visible');
+        });
+    </script>
+</body>
 </html>
